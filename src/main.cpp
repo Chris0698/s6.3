@@ -1,3 +1,4 @@
+/*
 #include <mbed.h>
 #include <rtos.h>
 #include <mbed_events.h>
@@ -20,8 +21,9 @@ EventQueue queue ;
 
 InterruptIn sw(SW2);
 int main() {
-    sw.rise(flash); /* executes as an ISR */
+    sw.rise(flash); /* executes as an ISR
     sw.fall(queue.event(blink));
     worker.start(callback(&queue, &EventQueue::dispatch_forever ));
     while(1){}
 }
+*/
